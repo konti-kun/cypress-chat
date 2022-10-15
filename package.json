@@ -9,6 +9,10 @@
     "emulators:start": "firebase emulators:start --only firestore,auth"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.3.5",
     "nuxt": "3.0.0-rc.11"
+  },
+  "dependencies": {
+    "daisyui": "^2.31.0"
   }
 }
