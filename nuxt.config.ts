@@ -10,5 +10,5 @@ export default defineNuxtConfig({
       ...envSet,
     },
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt"],
 });
