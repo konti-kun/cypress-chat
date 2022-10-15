@@ -1,5 +1,5 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-const envSet = require('./env.ts');
+const envSet = require("./env.ts");
 export default defineNuxtConfig({
   ssr: false,
   typescript: {
@@ -10,5 +10,5 @@ export default defineNuxtConfig({
       ...envSet,
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "nuxt-icon"],
 });

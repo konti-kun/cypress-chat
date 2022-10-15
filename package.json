@@ -12,7 +12,8 @@
     "@nuxtjs/tailwindcss": "^5.3.5",
     "@vueuse/core": "^9.3.0",
     "@vueuse/nuxt": "^9.3.0",
-    "nuxt": "3.0.0-rc.11"
+    "nuxt": "3.0.0-rc.11",
+    "nuxt-icon": "^0.1.6"
   },
   "dependencies": {
     "daisyui": "^2.31.0",
