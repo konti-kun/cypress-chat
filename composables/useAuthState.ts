@@ -1,6 +1,6 @@
 import { getAuth, onAuthStateChanged, User } from "firebase/auth";
 
-const [useProvideUserStore, useUser] = createInjectionState(() => {
+const [useProvideAuthStore, useAuth] = createInjectionState(() => {
   const loading = ref(true);
   const currentUser = ref<User>();
   const route = useRoute();
@@ -18,4 +18,4 @@ const [useProvideUserStore, useUser] = createInjectionState(() => {
   return { currentUser, loading };
 });
 
-export { useProvideUserStore, useUser };
+export { useProvideAuthStore, useAuth };

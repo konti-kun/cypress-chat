@@ -5,7 +5,7 @@ useHead({
     "data-theme": "bumblebee",
   },
 });
-useProvideUserStore();
+useProvideAuthStore();
 </script>
 <template>
   <div class="font-sans">
