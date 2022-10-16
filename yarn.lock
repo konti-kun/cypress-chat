@@ -1301,6 +1301,14 @@
     "@vueuse/shared" "9.3.0"
     vue-demi "*"
 
+"@vueuse/firebase@^9.3.0":
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/firebase/-/firebase-9.3.0.tgz#312a8d634bf9636974e4854a34a4b806c59d3a2d"
+  integrity sha512-lpSFJ9FsqjDEfXi1wip18jtpXaicRgW3/RiaFOYKVT75iYIVvjsmk6xFkrbaHGRtuK5yRlUaSX7DQmxzuijO4w==
+  dependencies:
+    "@vueuse/shared" "9.3.0"
+    vue-demi "*"
+
 "@vueuse/head@^0.7.12":
   version "0.7.13"
   resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-0.7.13.tgz#a6defbe215a7f42bd65daea5b2f102588f883270"

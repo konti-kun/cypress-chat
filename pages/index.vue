@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { addMessage } from "~~/lib/message";
+import { addMessage, messagesQuery } from "~~/lib/message";
 import { useAuth } from "~~/composables/useAuthState";
 
 const { currentUser } = useAuth()!;
+
+const messages = useFirestore(messagesQuery());
 
 const handleSubmit = (content: string) => {
   return addMessage(content, currentUser.value!.uid);
@@ -10,7 +12,7 @@ const handleSubmit = (content: string) => {
 </script>
 <template>
   <div>
-    <MessageList :messages="[]" />
+    <MessageList v-if="!!messages" :messages="messages" />
     <MessageForm :onSubmit="handleSubmit" />
   </div>
 </template>

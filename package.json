@@ -17,6 +17,7 @@
     "nuxt-icon": "^0.1.6"
   },
   "dependencies": {
+    "@vueuse/firebase": "^9.3.0",
     "daisyui": "^2.31.0",
     "firebase": "^9.12.1"
   }
