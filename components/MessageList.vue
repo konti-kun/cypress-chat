@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Message } from "~~/types/message";
 
-const messages = [{ senderId: "testid", content: "test" }] as Message[];
+defineProps<{ messages: Message[] }>();
 </script>
 <template>
   <div>
