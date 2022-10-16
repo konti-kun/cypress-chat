@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { AccountForm } from "~~/components/SignInForm.vue";
 import { signIn } from "~~/lib/auth";
-const handleSubmit = (param: AccountForm) => {
-  return signIn(param.email, param.password);
+const handleSubmit = async (param: AccountForm) => {
+  await signIn(param.email, param.password);
+  return true;
 };
 </script>
 <template>
