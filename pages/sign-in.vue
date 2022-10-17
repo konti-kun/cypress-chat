@@ -2,8 +2,12 @@
 import { AccountForm } from "~~/components/SignInForm.vue";
 import { signIn } from "~~/lib/auth";
 const handleSubmit = async (param: AccountForm) => {
-  await signIn(param.email, param.password);
-  return true;
+  try {
+    await signIn(param.email, param.password);
+    return true;
+  } catch (e) {
+    return false;
+  }
 };
 </script>
 <template>

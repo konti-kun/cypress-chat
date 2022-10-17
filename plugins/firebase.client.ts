@@ -9,10 +9,10 @@ export default defineNuxtPlugin((nuxtApp) => {
   if (getApps().length === 0) {
     const config = nuxtApp.$config;
     initializeApp({
-      apiKey: config.firebaseApiKey,
+      apiKey: 'dummy-api-key',
       authDomain: config.firebaseAuthDomain,
       databaseURL: config.firebaseDatabaseURL,
-      projectId: config.firebaseProjectId,
+      projectId: 'cypress-chat-test',
       storageBucket: config.firebaseStorageBucket,
       appId: config.firebaseAppId,
     });

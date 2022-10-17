@@ -23,6 +23,7 @@ const handleSubmit = async (form: AccountForm) => {
       </label>
       <input
         type="email"
+        name="email"
         autocomplete="username"
         class="input input-sm input-bordered"
         v-model="form.email"
@@ -34,6 +35,7 @@ const handleSubmit = async (form: AccountForm) => {
       </label>
       <input
         type="password"
+        name="password"
         autocomplete="current-password"
         class="input input-sm input-bordered"
         v-model="form.password"
