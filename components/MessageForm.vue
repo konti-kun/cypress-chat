@@ -14,7 +14,7 @@ const handleSubmit = async () => {
       <input
         type="text"
         placeholder="Type here"
-        class="input w-full max-w-xs input-bordered"
+        class="input w-full max-w-xs input-bordered message-form"
         v-model="content"
       />
       <button class="btn btn-square" type="submit">送信</button>
