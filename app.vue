@@ -9,7 +9,6 @@ useProvideAuthStore();
 </script>
 <template>
   <div class="font-sans">
-    <span id="a8sales" />
     <NuxtPage />
   </div>
 </template>
