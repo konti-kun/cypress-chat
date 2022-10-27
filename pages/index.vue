@@ -11,7 +11,7 @@ const handleSubmit = (content: string) => {
 };
 </script>
 <template>
-  <div>
+  <div v-if="currentUser">
     <MessageList v-if="!!messages" :messages="messages" />
     <MessageForm :onSubmit="handleSubmit" />
   </div>
